@@ -1,0 +1,10 @@
+# robots.txt for pizzainahalfshell.com
+
+# The asterisk (*) means these rules apply to ALL search engine bots
+User-agent: *
+
+# Allow crawling of the entire site
+Allow: /
+
+# Tell the bots exactly where to find the map of your site
+Sitemap: https://pizzainahalfshell.com/sitemap.xml
