@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Culinary Tech | Proprietary 3D Pizza Crust</title>
+    <meta name="description" content="Discover the proprietary dough-stamping technology behind the Pizza in a Half Shell concept. Scalable, 3D geometric crusts designed for commercial kitchens.">
+    <meta name="keywords" content="proprietary pizza tech, 3D stamped pizza dough, commercial pizza SOPs, location based entertainment food, immersive dining menu, viral food marketing">
+    
+    <style>
+        /* The Italian / Subtle Turtle Palette */
+        :root {
+            --bg-dark: #121212; 
+            --bg-panel: #1e1e1e; 
+            --turtle-green: #2ecc71; 
+            --pizza-red: #e74c3c;    
+            --crust-orange: #f39c12; 
+            --tech-blue: #3498db;    
+            --text-main: #fdfdfd;    
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Fixed Corporate Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 3px solid var(--turtle-green);
+            padding: 1.2rem 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .logo {
+            margin-left: 5%;
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--turtle-green);
+        }
+
+        nav {
+            margin-right: 5%;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--pizza-red);
+        }
+
+        /* Page Layout */
+        main {
+            margin-top: 100px;
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--pizza-red); /* Raphael/Tomato Accent for the food page */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* Culinary Grid Layout */
+        .culinary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .culinary-card {
+            background-color: var(--bg-panel);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            border-top: 4px solid var(--pizza-red);
+        }
+
+        .culinary-card.orange-accent {
+            border-top: 4px solid var(--crust-orange);
+        }
+
+        .culinary-card h2 {
+            color: var(--turtle-green);
+            font-size: 1.6rem;
+            margin-top: 0;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+        }
+
+        .culinary-card p {
+            font-size: 1.1rem;
+            color: #dcdcdc;
+            margin-bottom: 15px;
+        }
+
+        /* Image Placeholder styling */
+        .food-image-container {
+            width: 100%;
+            height: 400px;
+            background-color: #111;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #555;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 60px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+
+        .food-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none; /* Remove this when you add your real image source */
+        }
+
+        /* Full Width Section */
+        .full-width-section {
+            background-color: var(--bg-panel);
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            text-align: center;
+            border-bottom: 4px solid var(--turtle-green);
+        }
+
+        .full-width-section h2 {
+            color: var(--text-main);
+            font-size: 2rem;
+            margin-top: 0;
+        }
+        
+        .full-width-section h2 span {
+            color: var(--turtle-green);
+        }
+
+        .full-width-section p {
+            font-size: 1.15rem;
+            color: #dcdcdc;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .culinary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            text-align: center;
+            padding: 40px 5%;
+            color: #666;
+            border-top: 1px solid #222;
+            font-size: 0.9rem;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Pizza in a <span>Half Shell</span></a>
+        <nav>
+            <a href="culinary-tech.html" class="active">Culinary Tech</a>
+            <a href="digital-ecosystem.html">Digital App</a>
+            <a href="about.html">Leadership</a>
+            <a href="licensing.html">Licensing</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Proprietary Culinary IP</h1>
+            <p>The Art and Science of the 3D Crust</p>
+        </div>
+
+        <div class="food-image-container">
+            <img src="your-3d-calzone-image.jpg" alt="Artisanal calzone with 3D stamped geometric shell crust">
+            [Insert High-Res Proof of Concept Photography Here]
+        </div>
+
+        <div class="culinary-grid">
+            <div class="culinary-card">
+                <h2>Dough Mechanics & Integrity</h2>
+                <p>The primary challenge of shaping commercial pizza dough is "oven spring"—the rapid expansion of gases that destroys intricate shapes during the bake. </p>
+                <p>Through rigorous R&D and professional baking expertise, we have developed a dough formulation utilizing specific hydration levels and a controlled cold-fermentation process. This ensures the dough holds the deep, 3D geometric embossing of the "Half-Shell" stamp without blistering or tearing, while still delivering a premium, artisanal chew and flavor profile.</p>
+            </div>
+
+            <div class="culinary-card orange-accent">
+                <h2 style="color: var(--crust-orange);">Commercial Scalability (SOPs)</h2>
+                <p>A novel culinary concept is only valuable if it can be executed consistently across hundreds of locations. The "Half-Shell" process is designed for master franchisors and high-volume LBE kitchens.</p>
+                <p>The proprietary dough-stamping procedure translates into simple, replicable Standard Operating Procedures (SOPs). Utilizing custom culinary presses, line cooks can consistently execute the 3D crust with minimal additional prep time, ensuring high throughput during peak dining hours.</p>
+            </div>
+        </div>
+
+        <div class="full-width-section">
+            <h2>Transforming Food into <span>Marketing Assets</span></h2>
+            <p>In the modern digital landscape, the visual appeal of a menu item dictates its organic reach. By engineering a 3D, textured geometric shell directly into the crust, we transform a standard commodity (pizza) into a highly "Instagrammable" centerpiece. This built-in viral mechanism drastically lowers customer acquisition costs (CAC) by turning every customer into an active brand ambassador on social media.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>&copy; 2026 Planet T, LLC.</strong> All rights reserved. | Proprietary Culinary & Digital Architecture.</p>
+        <p><em>Pizza in a Half Shell is an independent culinary technology concept.</em></p>
+    </footer>
+
+</body>
+</html>
