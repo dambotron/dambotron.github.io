@@ -3,139 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza in a Half Shell | The Ultimate Teenage Mutant Ninja Turtle Pizza Fan Site</title>
-    <meta name="description" content="Welcome to Pizza in a Half Shell! Discover the craziest Teenage Mutant Ninja Turtle pizza recipes, TMNT pizza history, and all things cowabunga.">
-    <meta name="keywords" content="Teenage Mutant Ninja Turtle Pizza, TMNT Pizza, Pizza in a Half Shell, Ninja Turtle Pizza Recipes, tmntpizza">
     
-    <meta property="og:title" content="Pizza in a Half Shell | TMNT Pizza Fan Site">
-    <meta property="og:description" content="Discover the craziest Teenage Mutant Ninja Turtle pizza recipes and history!">
-    <meta property="og:type" content="website">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Pizza in a Half Shell",
-      "url": "https://pizzainahalfshell.com",
-      "description": "The ultimate fan site for Teenage Mutant Ninja Turtle pizza."
-    }
-    </script>
-
+    <title>Pizza in a Half Shell | Immersive Culinary & LBE Technology</title>
+    <meta name="description" content="Turnkey culinary IP and digital loyalty infrastructure for Location-Based Entertainment (LBE). Home of the proprietary 3D Half-Shell geometric pizza crust.">
+    <meta name="keywords" content="immersive dining concept, location based entertainment food, proprietary pizza tech, 3D stamped pizza crust, restaurant gamification, retro arcade dining">
+    
     <style>
-        /* Base Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('PIAHS.png'); 
-            background-size: cover;       
-            background-position: center;  
-            background-attachment: fixed; 
-            background-repeat: no-repeat; 
-            color: #333;
+        /* The Italian / Subtle Turtle Palette */
+        :root {
+            --bg-dark: #121212; /* Deep urban night */
+            --bg-panel: #1e1e1e; /* Slightly lighter panel */
+            
+            /* The Core Colors */
+            --turtle-green: #2ecc71; /* Basil / Leo / Brand Primary */
+            --pizza-red: #e74c3c;    /* Tomato / Raph / Hover Accent */
+            --crust-orange: #f39c12; /* Baked Crust / Mikey / Highlights */
+            --tech-blue: #3498db;    /* Leo / Secondary Tech Accent */
+            
+            --text-main: #fdfdfd;    /* Mozzarella White */
+            --text-muted: #a0a0a0;
         }
 
-        /* Navigation & Header */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Fixed Corporate Header */
         header {
             position: fixed;
             top: 0;
-            left: 0;
             width: 100%;
-            background-color: rgba(40, 167, 69, 0.95); 
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 3px solid var(--turtle-green);
+            padding: 1.2rem 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }
 
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        .logo {
+            margin-left: 5%;
+            font-size: 1.6rem;
+            font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 2px;
-            text-shadow: 2px 2px 4px #000;
+            color: var(--text-main);
+        }
+
+        .logo span {
+            color: var(--turtle-green);
         }
 
         nav {
-            margin-top: 10px;
+            margin-right: 5%;
         }
 
         nav a {
-            color: #ffeb3b;
+            color: var(--text-main);
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            font-size: 1.1rem;
+            margin-left: 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
             text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
         }
 
         nav a:hover {
-            color: #fff;
-            text-decoration: underline;
+            color: var(--pizza-red);
         }
 
-        /* Main Content Container */
-        main {
-            margin-top: 120px; /* Pushes content below fixed header */
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .content-box {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 40px;
-            border-radius: 10px;
-            max-width: 800px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            border: 4px solid #fd7e14; /* Michelangelo Orange */
-        }
-
-        h2 {
-            color: #28a745;
-            border-bottom: 2px solid #fd7e14;
-            padding-bottom: 10px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
+        /* Hero Section */
+        .hero {
+            margin-top: 85px;
+            padding: 120px 5%;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            background: linear-gradient(180deg, rgba(18,18,18,1) 0%, rgba(30,30,30,1) 100%);
+            border-bottom: 2px solid #333;
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
+
+        .cta-button {
+            background-color: var(--turtle-green);
+            color: #111;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: var(--pizza-red);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        /* Feature Grid with Turtle/Italian Accents */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 80px 5%;
+        }
+
+        .feature-card {
+            background-color: var(--bg-panel);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* The Easter Egg: Top borders match the masks / Italian flag */
+        .card-1 { border-top: 4px solid var(--pizza-red); }
+        .card-2 { border-top: 4px solid var(--crust-orange); }
+        .card-3 { border-top: 4px solid var(--tech-blue); }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            color: var(--turtle-green);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            text-align: center;
+            padding: 40px 5%;
+            color: #666;
+            border-top: 1px solid #222;
+            font-size: 0.9rem;
+        }
+        
+        footer strong {
+            color: var(--text-muted);
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Pizza in a Half Shell</h1>
+        <div class="logo">Pizza in a <span>Half Shell</span></div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="recipes.html">TMNT Recipes</a>
-            <a href="history.html">Pizza Lore</a>
+            <a href="culinary-tech.html">Culinary Tech</a>
+            <a href="digital-ecosystem.html">Digital App</a>
+            <a href="about.html">Leadership</a>
+            <a href="licensing.html">Licensing</a>
         </nav>
     </header>
 
-    <main>
-        <div class="content-box">
-            <h2>The Ultimate Teenage Mutant Ninja Turtle Pizza Experience</h2>
-            <p>Welcome to <strong>Pizza in a Half Shell</strong>, the web's most bodacious resource for everything related to <strong>Teenage Mutant Ninja Turtle pizza</strong>. Whether you're looking to recreate the iconic marshmallow and pepperoni slice from the 1987 cartoon, or you just want to read up on the history of the turtles' favorite food, you've found the right sewer grate.</p>
-            
-            <h3>Why Do the Ninja Turtles Love Pizza?</h3>
-            <p>Ever since Leo, Donnie, Raph, and Mikey mutated in the sewers of New York City, they've survived on a steady diet of NYC slices. But they didn't just stick to cheese and pepperoni. The <strong>TMNT pizza</strong> phenomenon is famous for its bizarre, totally gnarly flavor combinations that shouldn't work, but totally do.</p>
+    <section class="hero">
+        <h1>Engineering the Future of <br><span style="color: var(--crust-orange);">Immersive Dining</span></h1>
+        <p>We provide turnkey culinary intellectual property and digital architecture for Location-Based Entertainment (LBE). Transform standard food and beverage operations into viral, data-driven brand experiences.</p>
+        <a href="licensing.html" class="cta-button">Explore B2B Licensing</a>
+    </section>
 
-            <h3>Explore Our Turtle Lair</h3>
-            <ul>
-                <li><strong><a href="recipes.html">Weird Pizza Recipes</a>:</strong> Learn how to make a peanut butter and clam pizza!</li>
-                <li><strong><a href="history.html">TMNT Pizza Lore</a>:</strong> Discover the origins of tmntpizza.com and the evolution of the turtles' diet through the comics, movies, and cartoons.</li>
-            </ul>
+    <section class="features">
+        <div class="feature-card card-1">
+            <h3>The 3D "Half-Shell" Crust</h3>
+            <p>Our proprietary dough-stamping process engineers a deeply embossed, geometric shell pattern directly into pizzas and calzones. This technique guarantees high-volume commercial scalability while turning every dish into an organic, user-generated marketing asset on social media.</p>
         </div>
-    </main>
+
+        <div class="feature-card card-2">
+            <h3>Gamified Digital Loyalty</h3>
+            <p>Built on proven, consumer-facing rating application architecture, we offer the blueprint for bespoke POS and loyalty integration. Capture crucial consumer data, drive retention through gamification, and optimize your menu based on real-time feedback metrics.</p>
+        </div>
+
+        <div class="feature-card card-3">
+            <h3>Operational Expertise</h3>
+            <p>Concepts designed by operators, for operators. Backed by MBA strategy, instructional design architecture, and professional artisanal pizza-making experience, our SOPs ensure flawless handoffs to your master franchisors and kitchen staff.</p>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Planet T, LLC. A fan tribute site. Cowabunga!</p>
+        <p><strong>&copy; 2026 Planet T, LLC.</strong> All rights reserved. | Proprietary Culinary & Digital Architecture.</p>
+        <p><em>Pizza in a Half Shell is an independent culinary technology concept.</em></p>
     </footer>
 
 </body>
