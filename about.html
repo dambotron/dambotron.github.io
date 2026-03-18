@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Leadership | Pizza in a Half Shell</title>
+    <meta name="description" content="Meet Damian Moye, the architect behind the Pizza in a Half Shell concept. Discover his background in MBA business strategy, culinary technology, and artisanal pizza crafting.">
+    
+    <style>
+        /* The Italian / Subtle Turtle Palette (Matching Homepage) */
+        :root {
+            --bg-dark: #121212; 
+            --bg-panel: #1e1e1e; 
+            --turtle-green: #2ecc71; 
+            --pizza-red: #e74c3c;    
+            --crust-orange: #f39c12; 
+            --tech-blue: #3498db;    
+            --text-main: #fdfdfd;    
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Fixed Corporate Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 3px solid var(--turtle-green);
+            padding: 1.2rem 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .logo {
+            margin-left: 5%;
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--turtle-green);
+        }
+
+        nav {
+            margin-right: 5%;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--pizza-red);
+        }
+
+        /* Page Layout */
+        main {
+            margin-top: 100px;
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--turtle-green);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* The Bio Grid */
+        .bio-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .bio-sidebar {
+            background-color: var(--bg-panel);
+            padding: 40px;
+            border-radius: 8px;
+            border-top: 4px solid var(--tech-blue); /* Leo Blue Accent */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            text-align: center;
+        }
+
+        .bio-sidebar h2 {
+            color: var(--turtle-green);
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .bio-sidebar h3 {
+            color: var(--text-muted);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-main);
+            border: 2px solid var(--turtle-green);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        .contact-btn:hover {
+            background-color: var(--turtle-green);
+            color: #111;
+        }
+
+        /* The Narrative Content */
+        .bio-content {
+            background-color: var(--bg-panel);
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+        }
+
+        .bio-content h2 {
+            color: var(--crust-orange);
+            font-size: 1.5rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .bio-content p {
+            font-size: 1.1rem;
+            color: #dcdcdc;
+            margin-bottom: 25px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .bio-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            text-align: center;
+            padding: 40px 5%;
+            color: #666;
+            border-top: 1px solid #222;
+            font-size: 0.9rem;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Pizza in a <span>Half Shell</span></a>
+        <nav>
+            <a href="culinary-tech.html">Culinary Tech</a>
+            <a href="digital-ecosystem.html">Digital App</a>
+            <a href="about.html" class="active">Leadership</a>
+            <a href="licensing.html">Licensing</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Damian Moye</h1>
+            <p>Architect & Founder, Planet T, LLC</p>
+        </div>
+
+        <div class="bio-container">
+            <div class="bio-sidebar">
+                <h2>The Intersection of Tech & Dough</h2>
+                <h3>MBA | Educator | Software Developer</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 30px;">
+                    Bridging the gap between digital innovation and commercial kitchen realities for the next generation of Location-Based Entertainment.
+                </p>
+                <a href="https://www.linkedin.com/in/damianmoye/" target="_blank" class="contact-btn">Connect on LinkedIn</a>
+                <a href="licensing.html" class="contact-btn" style="border-color: var(--tech-blue);">B2B Inquiries</a>
+            </div>
+
+            <div class="bio-content">
+                <h2>Business Strategy & Technical Execution</h2>
+                <p>Equipped with an MBA and a robust background in instructional design and technology education, Damian approaches restaurant concepts not as standalone eateries, but as scalable, data-driven ecosystems. He is the original creator and lead engineer of <strong>Zahlords</strong>, a consumer-facing pizza rating application. This hands-on software experience forms the architectural blueprint for the gamified POS and loyalty systems proposed in the Pizza in a Half Shell concept.</p>
+
+                <h2 style="color: var(--pizza-red); margin-top: 40px;">Culinary Authenticity & The Pizza Sabbatical</h2>
+                <p>True innovation in the food space requires more than theoretical strategy—it requires time on the makeline. Rather than relying on third-party R&D, Damian completed a dedicated, one-year sabbatical focused exclusively on the science and craft of professional pizza making.</p>
+                <p>As a true pizza connoisseur and regular attendee of national pizza conventions, he tracks industry trends, dough mechanics, and commercial bake times. This deep, artisanal foundation guarantees that the proprietary 3D dough-stamping process scales efficiently in high-volume commercial kitchens without ever compromising the integrity of the crust.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>&copy; 2026 Planet T, LLC.</strong> All rights reserved. | Proprietary Culinary & Digital Architecture.</p>
+        <p><em>Pizza in a Half Shell is an independent culinary technology concept.</em></p>
+    </footer>
+
+</body>
+</html>
