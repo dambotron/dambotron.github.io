@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>B2B Licensing & Contact | Pizza in a Half Shell</title>
+    <meta name="description" content="Contact Planet T, LLC for B2B licensing, IP acquisition, and location-based entertainment consulting for the Pizza in a Half Shell culinary concept.">
+    <meta name="keywords" content="restaurant IP acquisition, culinary licensing, LBE partnerships, white label restaurant tech, food concept consulting">
+    
+    <style>
+        /* The Italian / Subtle Turtle Palette */
+        :root {
+            --bg-dark: #121212; 
+            --bg-panel: #1e1e1e; 
+            --turtle-green: #2ecc71; 
+            --pizza-red: #e74c3c;    
+            --crust-orange: #f39c12; 
+            --tech-blue: #3498db;    
+            --text-main: #fdfdfd;    
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Fixed Corporate Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 3px solid var(--turtle-green);
+            padding: 1.2rem 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .logo {
+            margin-left: 5%;
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--turtle-green);
+        }
+
+        nav {
+            margin-right: 5%;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--pizza-red);
+        }
+
+        /* Page Layout */
+        main {
+            margin-top: 100px;
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--crust-orange); /* Michelangelo/Orange Accent */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* Content Grid */
+        .licensing-grid {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        /* Left Side: Partnership Models */
+        .partnership-models {
+            background-color: var(--bg-panel);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+        }
+
+        .partnership-models h2 {
+            color: var(--turtle-green);
+            font-size: 1.8rem;
+            margin-top: 0;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        .model-tier {
+            margin-bottom: 30px;
+            padding-left: 20px;
+            border-left: 3px solid #444;
+            transition: border-color 0.3s ease;
+        }
+
+        .model-tier:hover {
+            border-left-color: var(--turtle-green);
+        }
+
+        .model-tier h3 {
+            color: var(--text-main);
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            margin-top: 0;
+        }
+
+        .model-tier p {
+            color: #dcdcdc;
+            font-size: 1rem;
+            margin-top: 0;
+        }
+
+        /* Right Side: Contact Card */
+        .contact-card {
+            background-color: #111;
+            padding: 40px;
+            border-radius: 8px;
+            border-top: 4px solid var(--turtle-green);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            text-align: center;
+        }
+
+        .contact-card h2 {
+            color: var(--text-main);
+            margin-top: 0;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-card h4 {
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        .contact-detail {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .contact-detail a {
+            color: var(--turtle-green);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact-detail a:hover {
+            color: var(--pizza-red);
+        }
+
+        .linkedin-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--tech-blue);
+            border: 2px solid var(--tech-blue);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .linkedin-btn:hover {
+            background-color: var(--tech-blue);
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .licensing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            text-align: center;
+            padding: 40px 5%;
+            color: #666;
+            border-top: 1px solid #222;
+            font-size: 0.9rem;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Pizza in a <span>Half Shell</span></a>
+        <nav>
+            <a href="culinary-tech.html">Culinary Tech</a>
+            <a href="digital-ecosystem.html">Digital App</a>
+            <a href="about.html">Leadership</a>
+            <a href="licensing.html" class="active">Licensing</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>B2B Licensing & Contact</h1>
+            <p>Strategic Partnerships for Location-Based Entertainment</p>
+        </div>
+
+        <div class="licensing-grid">
+            <div class="partnership-models">
+                <h2>Partnership Opportunities</h2>
+                <p style="color: #dcdcdc; margin-bottom: 40px; font-size: 1.1rem;">
+                    Planet T, LLC is currently accepting inquiries from master franchisors, theme parks, and corporate entertainment groups to integrate our proprietary infrastructure into their portfolios.
+                </p>
+
+                <div class="model-tier">
+                    <h3>1. Full IP & Asset Acquisition</h3>
+                    <p>A complete turnkey buyout of the "Pizza in a Half Shell" concept, including all culinary Standard Operating Procedures (SOPs), trademark-ready concepts, and full ownership of premium digital real estate (pizzainahalfshell.com).</p>
+                </div>
+
+                <div class="model-tier">
+                    <h3>2. White-Label Licensing</h3>
+                    <p>License our 3D dough-stamping technology and digital POS application blueprint to seamlessly layer into your existing restaurant brands or unannounced Location-Based Entertainment projects.</p>
+                </div>
+
+                <div class="model-tier">
+                    <h3>3. Culinary & Tech Consulting</h3>
+                    <p>Short-term advisory agreements to integrate our scalable dough mechanics and gamified app architecture directly with your internal culinary and software engineering teams.</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h2>Damian A. Moye</h2>
+                <h4>Owner, Planet T, LLC</h4>
+                
+                <div class="contact-detail">
+                    <span style="color: var(--text-muted); display: block; font-size: 0.85rem; text-transform: uppercase;">Direct Email</span>
+                    <a href="mailto:damian.moye@gmail.com">damian.moye@gmail.com</a>
+                </div>
+
+                <div class="contact-detail">
+                    <span style="color: var(--text-muted); display: block; font-size: 0.85rem; text-transform: uppercase;">Direct Line</span>
+                    <a href="tel:+19713445146">971-344-5146</a>
+                </div>
+
+                <a href="https://www.linkedin.com/in/damianmoye/" target="_blank" class="linkedin-btn">Connect on LinkedIn</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>&copy; 2026 Planet T, LLC.</strong> All rights reserved. | Proprietary Culinary & Digital Architecture.</p>
+        <p><em>Pizza in a Half Shell is an independent culinary technology concept.</em></p>
+    </footer>
+
+</body>
+</html>
