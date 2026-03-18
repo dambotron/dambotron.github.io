@@ -152,15 +152,19 @@
         /* Graphic Placeholder (For future UI mockups) */
         .tech-graphic {
             flex: 1;
-            background-color: #111;
+            background-color: transparent; /* Changed from #111 */
             min-height: 250px;
-            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px dashed #444;
-            color: var(--text-muted);
-            font-style: italic;
+            /* Removed the dashed border and text styling */
+        }
+
+        .tech-graphic img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
         }
 
         /* Responsive Design */
