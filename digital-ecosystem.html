@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Digital Ecosystem | Pizza in a Half Shell POS & Loyalty</title>
+    <meta name="description" content="Explore the proprietary digital architecture for the Pizza in a Half Shell concept. Gamified loyalty, consumer rating apps, and data-driven POS integration for LBE.">
+    <meta name="keywords" content="restaurant gamification, LBE loyalty app, custom POS integration, pizza rating software, customer data harvesting, digital dining experience">
+    
+    <style>
+        /* The Italian / Subtle Turtle Palette */
+        :root {
+            --bg-dark: #121212; 
+            --bg-panel: #1e1e1e; 
+            --turtle-green: #2ecc71; 
+            --pizza-red: #e74c3c;    
+            --crust-orange: #f39c12; 
+            --tech-blue: #3498db;    
+            --text-main: #fdfdfd;    
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Fixed Corporate Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(18, 18, 18, 0.95);
+            border-bottom: 3px solid var(--turtle-green);
+            padding: 1.2rem 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .logo {
+            margin-left: 5%;
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-main);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--turtle-green);
+        }
+
+        nav {
+            margin-right: 5%;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--pizza-red);
+        }
+
+        /* Page Layout */
+        main {
+            margin-top: 100px;
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 40px;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--tech-blue); /* Donatello/Tech Blue Accent */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* Feature Sections */
+        .tech-section {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 60px;
+            background-color: var(--bg-panel);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            border-left: 4px solid var(--tech-blue);
+        }
+
+        .tech-section.reverse {
+            flex-direction: row-reverse;
+            border-left: none;
+            border-right: 4px solid var(--turtle-green);
+        }
+
+        .tech-content {
+            flex: 1;
+        }
+
+        .tech-content h2 {
+            color: var(--crust-orange);
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .tech-content h2.green-header {
+            color: var(--turtle-green);
+        }
+
+        .tech-content p {
+            font-size: 1.1rem;
+            color: #dcdcdc;
+            margin-bottom: 20px;
+        }
+
+        /* Graphic Placeholder (For future UI mockups) */
+        .tech-graphic {
+            flex: 1;
+            background-color: #111;
+            min-height: 250px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #444;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .tech-section, .tech-section.reverse {
+                flex-direction: column;
+                text-align: center;
+            }
+            .tech-graphic {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            text-align: center;
+            padding: 40px 5%;
+            color: #666;
+            border-top: 1px solid #222;
+            font-size: 0.9rem;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Pizza in a <span>Half Shell</span></a>
+        <nav>
+            <a href="culinary-tech.html">Culinary Tech</a>
+            <a href="digital-ecosystem.html" class="active">Digital App</a>
+            <a href="about.html">Leadership</a>
+            <a href="licensing.html">Licensing</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Digital Ecosystem</h1>
+            <p>Gamified Loyalty & Data-Driven LBE Integration</p>
+        </div>
+
+        <div class="tech-section">
+            <div class="tech-content">
+                <h2>Proven Application Architecture</h2>
+                <p>The digital strategy for Pizza in a Half Shell is not theoretical. It is built upon the robust, real-world framework of <strong>Zahlords</strong>, a consumer-facing pizza rating application engineered by our leadership team.</p>
+                <p>This pre-existing software architecture provides a massive head start for enterprise tech teams, offering a blueprint for a fully customized, white-labeled restaurant application designed to integrate directly with existing Point of Sale (POS) and Location-Based Entertainment infrastructure.</p>
+            </div>
+            <div class="tech-graphic">
+                [UI Mockup Space: Mobile App Wireframe]
+            </div>
+        </div>
+
+        <div class="tech-section reverse">
+            <div class="tech-content">
+                <h2 class="green-header">Gamified Customer Loyalty</h2>
+                <p>In the modern LBE environment, standard punch-card loyalty programs are obsolete. Our digital ecosystem leverages "retro arcade" mechanics to drive repeat visits and increase Customer Lifetime Value (CLV).</p>
+                <p>Users earn digital achievements by rating specific specialty items, checking into locations, or trying seasonal 3D crust variations. High-ranking users can unlock exclusive digital badges, secret menu items, or in-store merchandise discounts, transforming casual diners into brand evangelists.</p>
+            </div>
+            <div class="tech-graphic">
+                [UI Mockup Space: Digital Badges & Rewards]
+            </div>
+        </div>
+
+        <div class="tech-section">
+            <div class="tech-content">
+                <h2 style="color: var(--pizza-red);">Data-Driven Menu Optimization</h2>
+                <p>Beyond customer engagement, the application serves as a real-time quality assurance and data harvesting tool for master franchisors. The integrated rating system allows corporate operators to track user sentiment on a granular level.</p>
+                <p>By aggregating verified ratings on crust integrity, flavor profiles, and LBE experience, leadership can rapidly identify underperforming regional locations or double down on high-grossing menu trends, ensuring consistent quality control at scale.</p>
+            </div>
+            <div class="tech-graphic">
+                [UI Mockup Space: Data Dashboard for Operators]
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p><strong>&copy; 2026 Planet T, LLC.</strong> All rights reserved. | Proprietary Culinary & Digital Architecture.</p>
+        <p><em>Pizza in a Half Shell is an independent culinary technology concept.</em></p>
+    </footer>
+
+</body>
+</html>
